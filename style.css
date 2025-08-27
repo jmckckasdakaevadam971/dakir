@@ -39,12 +39,9 @@ small { color:#555; }
 /* Buttons */
 .btn { display:inline-block; background:#0b66c3; color:#fff !important; padding:10px 20px; border-radius:6px; text-decoration:none; font-weight:600; margin-top:6px; transition:.15s background; }
 .btn:hover { background:#094f92; }
-.btn-sm { padding:6px 12px; font-size:90%; }
 .muted { color:#666; }
 .grid { display:flex; flex-wrap:wrap; gap:18px; }
 /* Images responsive */
 img { max-width:100%; height:auto; border-radius:6px; }
 /* Utility */
 .notice { background:#fff8d3; border:1px solid #e3d27a; padding:10px 14px; border-radius:6px; }
-
-
