@@ -1,160 +1,126 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <title>Dakir — Главная</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #f5f7fa;
-      --fg: #1b2430;
-      --accent: #2563eb;
-      --accent-hover: #1e4fb8;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #12171d;
-        --fg: #e5e7eb;
-      }
-    }
-    body {
-      margin:0;
-      font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,sans-serif;
-      background: var(--bg);
-      color: var(--fg);
-      line-height:1.5;
-      -webkit-font-smoothing: antialiased;
-    }
-    header, main, footer {
-      max-width: 880px;
-      margin: 0 auto;
-      padding: 24px 20px;
-    }
-    header h1 {
-      margin: 0 0 8px;
-      font-size: clamp(1.9rem, 3.2vw, 2.5rem);
-      letter-spacing: .5px;
-    }
-    p.lead {
-      font-size: 1.05rem;
-      margin-top: 0;
-      opacity:.9;
-    }
-    .actions {
-      margin: 24px 0 40px;
-      display:flex;
-      flex-wrap:wrap;
-      gap:14px;
-    }
-    a.btn {
-      display:inline-block;
-      background: var(--accent);
-      color:#fff;
-      text-decoration:none;
-      padding:12px 20px;
-      border-radius:8px;
-      font-weight:600;
-      font-size:15px;
-      letter-spacing:.3px;
-      transition:.18s background;
-    }
-    a.btn:hover, a.btn:focus {
-      background: var(--accent-hover);
-    }
-    section {
-      margin-bottom:48px;
-    }
-    h2 {
-      margin:0 0 14px;
-      font-size:1.4rem;
-    }
-    ul.features {
-      list-style:disc;
-      padding-left:20px;
-      margin:0;
-    }
-    ul.features li { margin:4px 0; }
-    .note {
-      font-size:.85rem;
-      opacity:.75;
-      max-width:640px;
-    }
-    footer {
-      font-size:.8rem;
-      border-top:1px solid rgba(0,0,0,0.08);
-      opacity:.8;
-    }
-    code {
-      background:rgba(0,0,0,0.08);
-      padding:2px 5px;
-      border-radius:4px;
-      font-size:.85em;
-    }
-    @media (prefers-color-scheme: dark) {
-      code { background:rgba(255,255,255,0.12); }
-      footer { border-top:1px solid rgba(255,255,255,0.12); }
-    }
-  </style>
-</head>
-<body>
-  <!--
-    Этот файл служит главной страницей для GitHub Pages (режим /docs).
-    Чтобы обновить ссылку скачивания при новой версии:
-      1. Создайте релиз с тегом (например DAKIR или v1.0.2).
-      2. Получите прямой URL до нового *.exe файла.
-      3. Откройте downloads/windows.html и замените URL в meta-тегах redirect.
-    Можно также внедрить автоматическое получение последнего релиза через GitHub API.
-  -->
-  <header>
-    <h1>Dakir</h1>
-    <p class="lead">Стартовая страница проекта. Ниже — кнопка для загрузки текущей версии установщика.</p>
-    <div class="actions">
-      <!-- ВАЖНО: эта кнопка ведет на страницу-редирект для более чистого UX -->
-      <a class="btn" href="downloads/windows.html">
-        Скачать установщик (Windows)
-      </a>
-      <a class="btn" href="https://github.com/jmckckasdakaevadam971/dakir/releases">
-        Все релизы
-      </a>
-      <a class="btn" href="https://github.com/jmckckasdakaevadam971/dakir">
-        Репозиторий
-      </a>
-    </div>
-  </header>
+	<head>
+		<meta charset="utf-8" />
+		<title>DAKIR вЂ“ РЈС‡С‘С‚ РїСЂРѕРґР°Р¶ Рё Р·Р°РґРѕР»Р¶РµРЅРЅРѕСЃС‚РµР№</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon" href="favicon.ico" />
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+		<meta name="msapplication-TileImage" content="mstile-150x150.png" />
+		<meta name="description" content="DAKIR вЂ“ РґРµСЃРєС‚РѕРї-РїСЂРёР»РѕР¶РµРЅРёРµ РґР»СЏ РІРµРґРµРЅРёСЏ РїСЂРѕРґР°Р¶, РґРѕР»РіРѕРІ Рё РѕС‚С‡С‘С‚РЅРѕСЃС‚Рё. РџРѕРґРїРёСЃРєР° Р±РµР· РѕРіСЂР°РЅРёС‡РµРЅРёР№, 30 РґРЅРµР№ Р±РµСЃРїР»Р°С‚РЅРѕ." />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="index.html">Р“Р»Р°РІРЅР°СЏ</a>
+				<a href="offer.html">РћС„РµСЂС‚Р°</a>
+				<a href="privacy.html">РџРѕР»РёС‚РёРєР°</a>
+				<a href="requisites.html">Р РµРєРІРёР·РёС‚С‹</a>
+			</nav>
+			<h1>DAKIR</h1>
+			<p>РџСЂРѕРіСЂР°РјРјР° СѓС‡С‘С‚Р° РїСЂРѕРґР°Р¶ / РґРѕР»РіРѕРІ РґР»СЏ РјР°Р»РѕРіРѕ Р±РёР·РЅРµСЃР°.</p>
+		</header>
 
-  <main>
-    <section>
-      <h2>Описание</h2>
-      <p>Здесь будет краткое описание назначения приложения. Вы можете расширить текст, добавить скриншоты (через отдельные файлы) и инструкции для пользователя.</p>
-    </section>
+		<main>
+			<section id="about">
+				<h2>Р§С‚Рѕ СЌС‚Рѕ?</h2>
+				<p><strong>DAKIR</strong> вЂ“ Р°РІС‚РѕРЅРѕРјРЅРѕРµ Windows-РїСЂРёР»РѕР¶РµРЅРёРµ (SQLite Р»РѕРєР°Р»СЊРЅРѕ). РќРµ С‚СЂРµР±СѓРµС‚ РїРѕСЃС‚РѕСЏРЅРЅРѕРіРѕ РёРЅС‚РµСЂРЅРµС‚Р° РєСЂРѕРјРµ РїСЂРѕРІРµСЂРєРё Рё РїСЂРѕРґР»РµРЅРёСЏ РїРѕРґРїРёСЃРєРё / РѕРїР»Р°С‚С‹ С‡РµСЂРµР· YooKassa.</p>
+				<ul class="checks">
+					<li>РЈС‡С‘С‚ РїСЂРѕРґР°Р¶ Рё РѕРїР»Р°С‚</li>
+					<li>РћС‚С‡С‘С‚С‹ Рё СЌРєСЃРїРѕСЂС‚ РІ Excel</li>
+					<li>РЈРїСЂР°РІР»РµРЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏРјРё</li>
+					<li>РџСЂРѕР±РЅС‹Р№ РїРµСЂРёРѕРґ 30 РґРЅРµР№ Рё РїРѕРґРїРёСЃРєР° Р±РµР· РѕРіСЂР°РЅРёС‡РµРЅРёР№</li>
+				</ul>
+				<blockquote>РџРѕСЃР»Рµ РїРѕРєСѓРїРєРё РїРѕРґРїРёСЃРєРё РґРѕСЃС‚СѓРї Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё Р°РєС‚РёРІРёСЂСѓРµС‚СЃСЏ РІ РїСЂРёР»РѕР¶РµРЅРёРё (РѕР±С‹С‡РЅРѕ РґРѕ 5 РјРёРЅСѓС‚ РїРѕСЃР»Рµ СѓСЃРїРµС€РЅРѕР№ РѕРїР»Р°С‚С‹).</blockquote>
+			</section>
 
-    <section>
-      <h2>Особенности (плейсхолдер)</h2>
-      <ul class="features">
-        <li>Планируемая функция №1</li>
-        <li>Планируемая функция №2</li>
-        <li>Планируемая функция №3</li>
-      </ul>
-    </section>
+			<section id="download">
+				<h2>РЎРєР°С‡Р°С‚СЊ</h2>
+				<p>РџРѕСЃР»РµРґРЅСЏСЏ РІРµСЂСЃРёСЏ СѓСЃС‚Р°РЅРѕРІС‰РёРєР° Windows:</p>
+				<p><a class="btn" href="downloads/DAKIR-Setup.exe">РЎРєР°С‡Р°С‚СЊ DAKIR (СѓСЃС‚Р°РЅРѕРІС‰РёРє)</a></p>
+				<p class="small">Р¤Р°Р№Р»: DAKIR-Setup.exe (СЃРј. РІРµСЂСЃРёСЋ РІРЅСѓС‚СЂРё СѓСЃС‚Р°РЅРѕРІС‰РёРєР°). РўСЂРµР±СѓРµС‚СЃСЏ Windows 10 РёР»Рё РЅРѕРІРµРµ.</p>
+				<details>
+					<summary>РџСЂРѕРІРµСЂРєР° С†РµР»РѕСЃС‚РЅРѕСЃС‚Рё (SHA256)</summary>
+					<code id="sha256-hash">402B2C2930CDA8BB93C29E263F591C7EFA9DA77FA6D392DDAF2A5191872A037E</code>
+				</details>
+			</section>
 
-    <section>
-      <h2>Проверка целостности (опционально)</h2>
-      <p class="note">
-        Рекомендуется публиковать SHA256-хэш установочного файла.<br>
-        <strong>SHA256:</strong> <code>[HASH PLACEHOLDER - обновите при публикации релиза]</code><br>
-        Пример для генерации (Linux/macOS): <code>sha256sum DAKIR-Setup_v1.0.1.exe</code><br>
-        На Windows (PowerShell): <code>Get-FileHash .\DAKIR-Setup_v1.0.1.exe -Algorithm SHA256</code>
-      </p>
-    </section>
-  </main>
+			<section id="plans">
+				<h2>РџРѕРґРїРёСЃРєР°</h2>
+				<div class="grid">
+					<div class="tariff">
+						<h3>РџСЂРѕР±РЅР°СЏ РІРµСЂСЃРёСЏ</h3>
+						<ul>
+							<li>30 РґРЅРµР№ Р±РµСЃРїР»Р°С‚РЅРѕ</li>
+							<li>РџРѕР»РЅС‹Р№ С„СѓРЅРєС†РёРѕРЅР°Р»</li>
+						</ul>
+						<p class="good">Р‘РµР· РѕРіСЂР°РЅРёС‡РµРЅРёР№ РЅР° РІСЂРµРјСЏ РїСЂРѕР±РЅРѕРіРѕ РїРµСЂРёРѕРґР°</p>
+					</div>
+					<div class="tariff">
+						<h3>РџРѕРґРїРёСЃРєР°</h3>
+						<ul>
+							<li>1 РјРµСЃСЏС† вЂ” <strong>2500 в‚Ѕ</strong></li>
+							<li>6 РјРµСЃСЏС†РµРІ вЂ” <strong>14000 в‚Ѕ</strong></li>
+							<li>12 РјРµСЃСЏС†РµРІ вЂ” <strong>26000 в‚Ѕ</strong></li>
+						</ul>
+						<p class="center"><a class="btn" href="#how-pay">РљР°Рє РѕРїР»Р°С‚РёС‚СЊ</a></p>
+					</div>
+				</div>
+			</section>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Dakir. <a href="https://github.com/jmckckasdakaevadam971/dakir">GitHub</a></p>
-  </footer>
-  <script>
-    // Текущий год в футере
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
+			<section id="how-pay">
+				<h2>РћРїР»Р°С‚Р°</h2>
+				<p>РћРїР»Р°С‚Р° РІС‹РїРѕР»РЅСЏРµС‚СЃСЏ С‡РµСЂРµР· РїР»Р°С‚С‘Р¶РЅС‹Р№ РІРёРґР¶РµС‚ <strong>YooKassa</strong> (РїРµСЂРµРЅР°РїСЂР°РІР»РµРЅРёРµ РІ Р±СЂР°СѓР·РµСЂ). РџРѕСЃР»Рµ СѓСЃРїРµС€РЅРѕР№ РѕРїР»Р°С‚С‹ РІРµСЂРЅРёС‚РµСЃСЊ РІ РїСЂРёР»РѕР¶РµРЅРёРµ Рё РЅР°Р¶РјРёС‚Рµ В«РћР±РЅРѕРІРёС‚СЊ СЃС‚Р°С‚СѓСЃВ» РІ РѕРєРЅРµ В«РџРѕРґРїРёСЃРєР°В» РёР»Рё РґРѕР¶РґРёС‚РµСЃСЊ Р°РІС‚Рѕ-РѕР±РЅРѕРІР»РµРЅРёСЏ (РєР°Р¶РґС‹Рµ 2 РјРёРЅСѓС‚С‹ Р»РѕРєР°Р»СЊРЅРѕ / 15 РјРёРЅСѓС‚ С‡РµСЂРµР· СЃРµСЂРІРµСЂ).</p>
+				<ol>
+					<li>Р’ РїСЂРёР»РѕР¶РµРЅРёРё РѕС‚РєСЂРѕР№С‚Рµ В«РџРѕРґРїРёСЃРєР°В» в†’ РІС‹Р±РµСЂРёС‚Рµ РїРµСЂРёРѕРґ в†’ РЅР°Р¶РјРёС‚Рµ РєРЅРѕРїРєСѓ РѕРїР»Р°С‚С‹.</li>
+					<li>Р’ Р±СЂР°СѓР·РµСЂРµ Р·Р°РІРµСЂС€РёС‚Рµ РїР»Р°С‚С‘Р¶.</li>
+					<li>РџСЂРё РІРѕР·РІСЂР°С‚Рµ (return_url) РѕС‚РѕР±СЂР°Р·РёС‚СЃСЏ СЃС‚СЂР°РЅРёС†Р° РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ.</li>
+				</ol>
+				<p>Р•СЃР»Рё СЃС‚СЂР°РЅРёС†Р° РѕРїР»Р°С‚С‹ РЅРµ РѕС‚РєСЂС‹Р»Р°СЃСЊ вЂ“ РєРѕРїРёСЂСѓР№С‚Рµ СЃСЃС‹Р»РєСѓ РІСЂСѓС‡РЅСѓСЋ РёР· РѕРєРЅР° РїСЂРёР»РѕР¶РµРЅРёСЏ.</p>
+			</section>
+
+			<section id="service-provision">
+				<h2>РџСЂРµРґРѕСЃС‚Р°РІР»РµРЅРёРµ СѓСЃР»СѓРіРё</h2>
+				<p>РЈСЃР»СѓРіР° вЂ“ РґРѕСЃС‚СѓРї Рє С„СѓРЅРєС†РёРѕРЅР°Р»Сѓ РїСЂРёР»РѕР¶РµРЅРёСЏ РїРѕ РїРѕРґРїРёСЃРєРµ. РЎС‡РёС‚Р°РµС‚СЃСЏ РѕРєР°Р·Р°РЅРЅРѕР№ СЃ РјРѕРјРµРЅС‚Р° СѓСЃС‚Р°РЅРѕРІРєРё СЃС‚Р°С‚СѓСЃР° <em>РџРѕРґРїРёСЃРєР° Р°РєС‚РёРІРЅР°</em>.</p>
+			</section>
+
+			<section id="refund">
+				<h2>Р’РѕР·РІСЂР°С‚С‹</h2>
+				<p>Р¦РёС„СЂРѕРІРѕР№ С„СѓРЅРєС†РёРѕРЅР°Р». Р’РѕР·РІСЂР°С‚ РІРѕР·РјРѕР¶РµРЅ РїСЂРё РґРІРѕР№РЅРѕРј СЃРїРёСЃР°РЅРёРё РёР»Рё С‚РµС…РЅРёС‡РµСЃРєРѕР№ РЅРµРІРѕР·РјРѕР¶РЅРѕСЃС‚Рё Р°РєС‚РёРІР°С†РёРё (РїРѕРґС‚РІРµСЂР¶РґР°РµС‚СЃСЏ РїРµСЂРµРїРёСЃРєРѕР№). РЎСЂРѕРє РѕР±СЂР°С‰РµРЅРёСЏ: 7 РєР°Р»РµРЅРґР°СЂРЅС‹С… РґРЅРµР№ СЃ РґР°С‚С‹ РѕРїР»Р°С‚С‹.</p>
+			</section>
+
+			<section id="legal">
+				<h2>Р”РѕРєСѓРјРµРЅС‚С‹</h2>
+				<p>
+					<a href="offer.html">РћС„РµСЂС‚Р°</a>
+					вЂў <a href="privacy.html">РџРѕР»РёС‚РёРєР° РєРѕРЅС„РёРґРµРЅС†РёР°Р»СЊРЅРѕСЃС‚Рё</a>
+					вЂў <a href="requisites.html">Р РµРєРІРёР·РёС‚С‹</a>
+				</p>
+			</section>
+
+			<section id="contact">
+				<h2>РџРѕРґРґРµСЂР¶РєР°</h2>
+				<p>E-mail: <a href="mailto:07dakaev07@mail.ru">07dakaev07@mail.ru</a></p>
+				<p>РўРµР».: +7 989 923-47-30</p>
+				<p>Telegram: <a href="https://t.me/Dakir_Rassrochka" target="_blank">@Dakir_Rassrochka</a></p>
+			</section>
+
+			<section id="security">
+				<h2>Р‘РµР·РѕРїР°СЃРЅРѕСЃС‚СЊ РїР»Р°С‚РµР¶РµР№</h2>
+				<p>РџР»Р°С‚РµР¶Рё РѕР±СЂР°Р±Р°С‚С‹РІР°СЋС‚СЃСЏ РЅР° СЃС‚РѕСЂРѕРЅРµ РїР»Р°С‚С‘Р¶РЅРѕРіРѕ РїСЂРѕРІР°Р№РґРµСЂР° YooKassa. РќРѕРјРµСЂ РєР°СЂС‚С‹ Рё РїРµСЂСЃРѕРЅР°Р»СЊРЅС‹Рµ РїР»Р°С‚С‘Р¶РЅС‹Рµ РґР°РЅРЅС‹Рµ РЅРµ РїРѕРїР°РґР°СЋС‚ РІ РїСЂРёР»РѕР¶РµРЅРёРµ DAKIR.</p>
+			</section>
+		</main>
+
+		<footer>
+			<small>
+				В© 2025 DAKIR. Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹.
+				| <a href="offer.html" style="color:#fff">РћС„РµСЂС‚Р°</a>
+				| <a href="privacy.html" style="color:#fff">РџРѕР»РёС‚РёРєР°</a>
+			</small>
+		</footer>
+	</body>
 </html>
+

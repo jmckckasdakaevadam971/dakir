@@ -1,0 +1,47 @@
+/* Base */
+body {
+	margin: 0;
+	font-family: system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+	line-height: 1.5;
+	color: #222;
+	background: #f8fafc;
+}
+header, footer {
+	background: #123456;
+	color: #fff;
+	padding: 18px 24px;
+}
+a { color: #0b66c3; }
+a:hover { text-decoration: underline; }
+h1, h2, h3 { font-weight: 600; color: #123456; margin-top: 1.6em; }
+h1 { margin-top: 0; }
+main { max-width: 960px; margin: 0 auto; padding: 24px; }
+nav a { color:#fff; margin-right:18px; text-decoration:none; font-weight:500; }
+nav a:hover { text-decoration:underline; }
+section { margin-bottom:48px; }
+code { background:#eef; padding:2px 5px; border-radius:4px; font-size:90%; }
+/* Tables */
+table { border-collapse:collapse; width:100%; margin:12px 0; background:#fff; }
+th, td { border:1px solid #ccd; padding:8px; text-align:left; }
+th { background:#f0f4f8; }
+/* Lists */
+ul.checks { list-style:none; padding-left:0; }
+ul.checks li:before { content:"✔"; color:#0a8a3a; margin-right:6px; }
+/* Blocks */
+blockquote { margin:12px 0; padding:12px 16px; border-left:4px solid #0b66c3; background:#f0f6ff; }
+small { color:#555; }
+/* Tariff cards */
+.tariff { display:inline-block; border:1px solid #0b66c3; padding:14px 18px; border-radius:10px; background:#fff; box-shadow:0 2px 4px rgba(0,0,0,.06); min-width:220px; margin:8px 16px 16px 0; vertical-align:top; }
+.tariff h3 { margin-top:0; }
+.bad { color:#b30000; font-weight:600; }
+.good { color:#0a8a3a; font-weight:600; }
+.center { text-align:center; }
+/* Buttons */
+.btn { display:inline-block; background:#0b66c3; color:#fff !important; padding:10px 20px; border-radius:6px; text-decoration:none; font-weight:600; margin-top:6px; transition:.15s background; }
+.btn:hover { background:#094f92; }
+.muted { color:#666; }
+.grid { display:flex; flex-wrap:wrap; gap:18px; }
+/* Images responsive */
+img { max-width:100%; height:auto; border-radius:6px; }
+/* Utility */
+.notice { background:#fff8d3; border:1px solid #e3d27a; padding:10px 14px; border-radius:6px; }
