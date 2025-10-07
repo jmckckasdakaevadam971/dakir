@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dakir — Главная</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f5f7fa;
+      --fg: #1b2430;
+      --accent: #2563eb;
+      --accent-hover: #1e4fb8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12171d;
+        --fg: #e5e7eb;
+      }
+    }
+    body {
+      margin:0;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height:1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    header, main, footer {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 24px 20px;
+    }
+    header h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.9rem, 3.2vw, 2.5rem);
+      letter-spacing: .5px;
+    }
+    p.lead {
+      font-size: 1.05rem;
+      margin-top: 0;
+      opacity:.9;
+    }
+    .actions {
+      margin: 24px 0 40px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+    a.btn {
+      display:inline-block;
+      background: var(--accent);
+      color:#fff;
+      text-decoration:none;
+      padding:12px 20px;
+      border-radius:8px;
+      font-weight:600;
+      font-size:15px;
+      letter-spacing:.3px;
+      transition:.18s background;
+    }
+    a.btn:hover, a.btn:focus {
+      background: var(--accent-hover);
+    }
+    section {
+      margin-bottom:48px;
+    }
+    h2 {
+      margin:0 0 14px;
+      font-size:1.4rem;
+    }
+    ul.features {
+      list-style:disc;
+      padding-left:20px;
+      margin:0;
+    }
+    ul.features li { margin:4px 0; }
+    .note {
+      font-size:.85rem;
+      opacity:.75;
+      max-width:640px;
+    }
+    footer {
+      font-size:.8rem;
+      border-top:1px solid rgba(0,0,0,0.08);
+      opacity:.8;
+    }
+    code {
+      background:rgba(0,0,0,0.08);
+      padding:2px 5px;
+      border-radius:4px;
+      font-size:.85em;
+    }
+    @media (prefers-color-scheme: dark) {
+      code { background:rgba(255,255,255,0.12); }
+      footer { border-top:1px solid rgba(255,255,255,0.12); }
+    }
+  </style>
+</head>
+<body>
+  <!--
+    Этот файл служит главной страницей для GitHub Pages (режим /docs).
+    Чтобы обновить ссылку скачивания при новой версии:
+      1. Создайте релиз с тегом (например DAKIR или v1.0.2).
+      2. Получите прямой URL до нового *.exe файла.
+      3. Откройте downloads/windows.html и замените URL в meta-тегах redirect.
+    Можно также внедрить автоматическое получение последнего релиза через GitHub API.
+  -->
+  <header>
+    <h1>Dakir</h1>
+    <p class="lead">Стартовая страница проекта. Ниже — кнопка для загрузки текущей версии установщика.</p>
+    <div class="actions">
+      <!-- ВАЖНО: эта кнопка ведет на страницу-редирект для более чистого UX -->
+      <a class="btn" href="downloads/windows.html">
+        Скачать установщик (Windows)
+      </a>
+      <a class="btn" href="https://github.com/jmckckasdakaevadam971/dakir/releases">
+        Все релизы
+      </a>
+      <a class="btn" href="https://github.com/jmckckasdakaevadam971/dakir">
+        Репозиторий
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Описание</h2>
+      <p>Здесь будет краткое описание назначения приложения. Вы можете расширить текст, добавить скриншоты (через отдельные файлы) и инструкции для пользователя.</p>
+    </section>
+
+    <section>
+      <h2>Особенности (плейсхолдер)</h2>
+      <ul class="features">
+        <li>Планируемая функция №1</li>
+        <li>Планируемая функция №2</li>
+        <li>Планируемая функция №3</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Проверка целостности (опционально)</h2>
+      <p class="note">
+        Рекомендуется публиковать SHA256-хэш установочного файла.<br>
+        <strong>SHA256:</strong> <code>[HASH PLACEHOLDER - обновите при публикации релиза]</code><br>
+        Пример для генерации (Linux/macOS): <code>sha256sum DAKIR-Setup_v1.0.1.exe</code><br>
+        На Windows (PowerShell): <code>Get-FileHash .\DAKIR-Setup_v1.0.1.exe -Algorithm SHA256</code>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Dakir. <a href="https://github.com/jmckckasdakaevadam971/dakir">GitHub</a></p>
+  </footer>
+  <script>
+    // Текущий год в футере
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
