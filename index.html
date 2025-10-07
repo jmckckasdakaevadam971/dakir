@@ -1,103 +1,103 @@
 <!DOCTYPE html>
-<html язык="ру">
-<голова>
-  <мета набор символов="УТФ-8" />
-  <заголовок>Дакир — Главная</заголовок>
-  <мета имя="область просмотра" содержание="ширина=ширина устройства,начальный масштаб=1" />
-  <стиль>
- :корень {
- цветовая схема: свет темный;
- --бг: #f5f7fa;
- --фг: #1b2430;
- --аксент: #2563eb;
- --аксент-наведение: #1e4fb8;
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Дакир — Главная</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+ :root {
+ color-scheme: light dark;
+ --bg: #f5f7fa;
+ --fg: #1b2430;
+ --accent: #2563eb;
+ --accent-hover: #1e4fb8;
     }
- @медиа (предпочитает цветовую схему: темный) {
- :корень {
- --бг: #12171d;
- --фг: #e5e7eb;
+ @media (prefers-color-scheme: dark) {
+ :root {
+ --bg: #12171d;
+ --fg: #e5e7eb;
       }
     }
- тело {
- маржа:0;
- семейство шрифтов: системный интерфейс,-apple-система,Сегоэ Пользовательский интерфейс,Робото,Убунту,Кантарелл,без засечек;
- фон: вар(--бг);
- цвет: вар(--фг);
- высота линии:1,5;
- -webkit-сглаживание шрѸфтов: сглаженный;
+ body {
+ margin:0;
+ font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,sans-serif;
+ background: var(--bg);
+ color: var(--fg);
+ line-height:1.5;
+ -webkit-font-smoothing: antialiased;
     }
- заголовок, основной, нижний колонтитул {
- максимальная ширина: 880пх;
- маржа: 0 авто;
- прокладка: 24пх 20пх;
+ header, main, footer {
+ max-width: 880px;
+ margin: 0 auto;
+ padding: 24px 20px;
     }
- заголовок ч1 {
- маржа: 0 0 8пх;
- размер шрифта: зажим(1,9бэр, 3.2вв, 2,5бэр);
- межбуквенный интервал: . .5пх;
+ header h1 {
+ margin: 0 0 8px;
+ font-size: clamp(1.9rem, 3.2vw, 2.5rem);
+ letter-spacing: -.5px;
     }
- п.вести {
- размер шрифта: 1,05бэр;
- край-верх: 0;
- непрозрачность:. .9;
+ p.lead {
+ font-size: 1.05rem;
+ margin-top: 0;
+ opacity: .9;
     }
- .действия {
- маржа: 24пх 0 40пх;
- отображать:сгибать;
- гибкая обертка:сворачивать;
- зазор:14пх;
+ .actions {
+ margin: 24px 0 40px;
+ display:flex;
+ flex-wrap:wrap;
+ gap:14px;
     }
- а.бтн {
- отображать:встроенный блок;
- фон: вар(--акцент);
- цвет:#fff;
- текстовое оформление:никто;
- прокладка:12пх 20пх;
- радиус границы:8пх;
- вес шрифта:600;
- размер шрифта:15пх;
- межбуквенный интервал:. .3пх;
- переход:. .18с фон;
+ a.btn {
+ display:inline-block;
+ background: var(--accent);
+ color:#fff;
+ text-decoration:none;
+ padding:12px 20px;
+ border-radius:8px;
+ font-weight:600;
+ font-size:15px;
+ letter-spacing:.3px;
+ transition:.18s background;
     }
- а.бтн:зависнуть, а.бтн:фокус {
- фон: вар(--акцент-наведение);
+ a.btn:hover, a.btn:focus {
+ background: var(--accent-hover);
     }
- раздел {
- нижний край: 48px;
+ section {
+ margin-bottom: 48px;
     }
  h2 {
- поле:0 0 14px;
- размер шрифта: 1.4rem;
+ margin:0 0 14px;
+ font-size: 1.4rem;
     }
  ul.features {
- стиль списка:диск;
- отступ слева: 20px;
- маржа:0;
+ list-style:disc;
+ padding-left: 20px;
+ margin:0;
     }
- ul.features li { поле:4px 0; }
- .примечание {
- раазмѵр шрифта:.85rem;
- непрозрачность: .75;
- максимальная ширина: 640 пикселей;
+ ul.features li { margin:4px 0; }
+ .note {
+ font-size:.85rem;
+ opacity: .75;
+ max-width: 640px;
     }
- нижний колонтитул {
- размер шрифта:.8rem;
+ footer {
+ font-size:.8rem;
  border-top:1px solid rgba(0,0,0,0.08);
- непрозрачность: .8;
+ opacity: .8;
     }
- код {
- фон:rgba(0,0,0,0.08);
- отступ: 2px 5px;
- радиус границы:4px;
- размер шрифта:.85em;
+ code {
+ background:rgba(0,0,0,0.08);
+ padding: 2px 5px;
+ border-radius:4px;
+ font-size:.85em;
     }
- @media (предпочитает цветовую схему: темную) {
- код { фон:rgba(255,255,255,0.12); }
- нижний колонтитул { border-top:1px solid rgba(255,255,255,0.12); }
+ @media (prefers-color-scheme: dark) {
+ code { background:rgba(255,255,255,0.12); }
+ footer { border-top:1px solid rgba(255,255,255,0.12); }
     }
-  </стиль>
-</голова>
-<тело>
+  </style>
+</head>
+<body>
   <!--
  ЭтѾ фаил слаѰѰѰйджит стартвооѾѾѾѾшшшшшиий ссЂайт для сстраниѸцð GitHub (режим /docs).
  Чтобы обновить ссылку скачивания при новой версии:
@@ -106,47 +106,47 @@
  3. Замените href у кнопки ниже.
  Можно также внедрить автоматическое получение последнего релиза через API GitHub.
  -->
-  <заголовок>
-    <ч1>Дакир</ч1>
-    <p класс="вести">Стартовая страница проекта. Ниже — кнопка для загрузки текущей версии установщика.</p>
-    <див класс="действия">
+  <header>
+    <h1>Дакир</h1>
+    <p class="lead">Стартовая страница проекта. Ниже — кнопка для загрузки текущей версии установщика.</p>
+    <div class="actions">
       <!-- ВАЖНО: эта ссылка должна точно совпадать с тегом релиза и именем файла -->
-      <a класс="бтн" href=https://github.com/jmckckasdakaevadam971/dakir/releases/download/DAKIR/DAKIR-Setup_v1.0.1.exe">
+      <a class="btn" href="https://github.com/jmckckasdakaevadam971/dakir/releases/download/DAKIR/DAKIR-Setup_v1.0.1.exe">
  Скачать сайтик (Windows)
       </a>
-      <a класс="бтн" href="https://github.com/jmckckasdakaevadam971/dakir/releases">
+      <a class="btn" href="https://github.com/jmckckasdakaevadam971/dakir/releases">
  Все релизы
       </a>
-      <a класс="бтн" href="https://github.com/jmckckasdakaevadam971/dakir">
+      <a class="btn" href="https://github.com/jmckckasdakaevadam971/dakir">
  Репозиторий на GitHub
       </a>
-    </див>
-  </заголовок>
+    </div>
+  </header>
 
-  <основной>
-    <раздел>
+  <main>
+    <section>
       <h2>Описание</h2>
       <p>Здесь будет краткое описание назначения приложения. Вы можете расширить текст, добавить скриншоты (через отдельные файлы) и инструкции для пользователя.</p>
-    </раздел>
+    </section>
 
-    <раздел>
+    <section>
       <h2>Особенности (плейсхолдер)</h2>
-      <уль класс="особенности">
-        <ли>Планируемая функция №1</ли>
-        <ли>Планируемая функция №2</ли>
-        <ли>Планируемая функция №3</ли>
-      </уль>
-    </раздел>
+      <ul class="features">
+        <li>Планируемая функция №1</li>
+        <li>Планируемая функция №2</li>
+        <li>Планируемая функция №3</li>
+      </ul>
+    </section>
 
-    <раздел>
+    <section>
       <h2>Проверка целостности (опционально)</h2>
-      <p класс="примечание">
- Рекомендуется публиковать SHA256-хэш установочного файла.<бр>
- Пример для генерации (Linux/macOS): <код>sha256sum DAKIR-Setup_v1.0.1.exe</код><бр>
- На Windows (PowerShell): <код>Получить-FileHash.\\DAKIR-Setup_v1.0.1.exe -Альгоритм SHA256</код>
+      <p class="note">
+ Рекомендуется публиковать SHA256-хэш установочного файла.<br>
+ Пример для генерации (Linux/macOS): <code>sha256sum DAKIR-Setup_v1.0.1.exe</code><br>
+ На Windows (PowerShell): <code>Получить-FileHash.\\DAKIR-Setup_v1.0.1.exe -Альгоритм SHA256</code>
       </p>
-    </раздел>
-  </основной>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; <span id="year"></span> Dakir. <a href="https://github.com/jmckckasdakaevadam971/dakir">GitHub</a></p>
